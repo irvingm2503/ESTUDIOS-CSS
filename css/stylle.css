@@ -1,0 +1,26 @@
+body {
+    background-color: goldenrod;
+}
+.titles{
+    text-align: center;
+    border: 2px solid #000;
+    background-color:wheat;
+    border-radius: 15px;
+    color: goldenrod;
+    border-color: black;
+    width: 100%;
+    border-width: 100%;
+
+}
+.texto{
+
+        border: 2px solid #000; /* Cambia el color y grosor del borde aquí */
+        border-radius: 15px; /* Cambia el radio de los bordes redondeados aquí */
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0); /* Fondo transparente */
+        width: 100%; /* Ancho del recuadro */
+        box-sizing: border-box;
+        color: #000; /* Color del texto */
+        font-family: Arial, Helvetica, sans-serif; /* Fuente Times New Roman */
+        text-align: justify; /* Texto centrado */
+    }
