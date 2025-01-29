@@ -13,9 +13,9 @@ body {
 .titles{
     text-align: center;
     border: 2px solid #000;
-    background-color:wheat;
+    background-color:goldenrod;
     border-radius: 15px;
-    color: goldenrod;
+    color: white;
     border-color: black;
     width: 100%;
     border-width: 100%;
@@ -25,7 +25,7 @@ body {
 
 }
 .normal{
-        text-transform: uppercase; /**texto en mayusculas siempre  */
+    text-transform: uppercase; /**texto en mayusculas siempre  */
         font-size: medium;
 
        /* border: 2px solid #000; /* Cambia el color y grosor del borde aquí */
@@ -35,7 +35,8 @@ body {
         width: 100%; /* Ancho del recuadro */
         box-sizing: border-box;
         color: #000; /* Color del texto */
-        font-family: Impact, Haettenschweiler, 'Times New Roman', Times, serif /* Fuente Times New Roman */
+        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Fuente Times New Roman */
         text-align: justify; /* Texto centrado */
     }
 
@@ -44,29 +45,14 @@ body {
         font-size: large;
         
         background-color: aliceblue;
-        border-radius: 5%;
-        width: auto;
+        border: 2px solid #000;
         height: 100px;
         border-radius: 0.15cm;
-        position: relative;
+      
 
-       
-            display: flex;
-            align-items: center; /* Alinea verticalmente */
+        display: flex;
+        align-items: center; /* Alinea verticalmente */
        
         
           
-    }
-    .txtMuestra{
-
-        
-            position: absolute;
-            top: 50%;
-            left: 100%;
-            height: 30%;
-            width: 50%;
-            margin: -15% 0 0 -25%;
-
-            tex
-         
     }
