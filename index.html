@@ -10,21 +10,33 @@
     <!-- and it's easy to individually load additional languages -->
     <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/languages/go.min.js"></script>
     <script>hljs.highlightAll();</script>
+
+    <script src="app,js"></script>
 </head>
 <body>
     <br><br>
     <div class="fondo">
-
+<!-- seccion de temas -->
+ <!-- introduccion -->
+        <br><br>
         
         <div class="titles">
             <h1 >ESTILOS EN CSS</h1>
+            
+            <input type="text" id="search" placeholder="Buscar sección..." style="width: 80%; padding: 10px; margin-bottom: 20px;">
         </div>
+    <!-- introduccion hola mundo html, base -->
+ <div class="seccion" data-title="introduccion hola mundo html, base">   
     <h2 class="normal">Lo priemero que haremos sera crear nuestro h1 este sera un texto de sifuiente manera:</h2>
         <pre><code class="language-html">
     &lt;h1&gt;HOLA MUNDO!!!!&lt;/h1&gt;
         </code></pre>
     <h2 class="normal"> EL TEXTO SE DEBRA MOSTRAR DE LA SIGUIENTE MANERA:</h2>
     <h1  class="muestra">       HOLA MUNDO!!!!</h1>
+</div>
+<!-- fin introduccion -->
+ <!-- cambio de fuente, fuentes,arial, times new roman -->
+ <div class="seccion" data-title="cambio de fuente, fuentes,arial, times new roman">
     <h2 class="normal">si le asignamos una clase de css podremos camiar el texto con la siguiente instruccion </h2>
     
         <pre><code class="language-css">
@@ -32,6 +44,10 @@ font-family: Impact, Haettenschweiler;
         </code></pre>
     
         <h1 style=" font-family: Impact, Haettenschweiler; " class="muestra">       HOLA MUNDO!!!!</h1>
+    </div>
+    <!-- fin de cambio de tipografia  -->
+     <!-- cambio de color de letras -->
+     <div class="seccion" data-title="cambio de color de tipografia">
     
         <h2 class="normal">asi mismo podemos realizar un cambio de color de la siguiente manera 
              </h2>
@@ -47,157 +63,171 @@ color: red;/*cambio de color mediante el nombre*/
         </h2>
     
         <h1 style="color: red;" class="muestra">       HOLA MUNDO!!!!</h1>
+</div>
+<!-- fin del cambio de color  -->
+ <!-- poner texto en negrita -->
 
-        <h2 class="normal">hay muchas mas modificasiones de texto que podemos hacer al texto, las que consideramos importantes y se mostraran a continuacion son: <br>
-            aliniacion (centrado,  derecha, izquierda, justificado ) 
-            subrallado <br>
-            negritas <br>
-            cursivas <br>
-            tachado <br>
-        
-        
-        </h2>
-
-
-
-
-        <h2 class="normal">Cambia el color de fondo del texto</h2>
-           
-        <pre><code class="language-css">
-            background-color: yellow;
-        </code></pre>
-        <h1 style="color: yellow;" class="muestra">       HOLA MUNDO!!!!</h1>
-
-        
+<div class="seccion" data-title="negrita, texto cambio ">
         <h2 class="normal">Convierte el texto en negrita</h2>
         <pre><code class="language-css">font-weight: bold;</code></pre>
         <h1 class="muestra" style="font-weight: bold;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- subrallar texto -->
+<div class="seccion" data-title="subrallar texto estilo stiles">
     
         <h2 class="normal">Subraya el texto</h2>
         <pre><code class="language-css">text-decoration: underline;</code></pre>
         <h1 class="muestra" style="text-decoration: underline;">HOLA MUNDO!!!!</h1>
-    
+</div>  
+ <!--alinear texto  -->
+ <div class="seccion" data-title="alineacion centrado justificado izquierda derecha ">
         <h2 class="normal">Alinea el texto al centro</h2>
         <pre><code class="language-css">text-align: center;</code></pre>
         <h1 class="muestra" style="text-align: center;">HOLA MUNDO!!!!</h1>
-    
+ </div>   
+ <!-- sombreado de texto -->
+ <div class="seccion" data-title="agregar sombra texto, sombreado "> 
         <h2 class="normal">Agrega una sombra al texto</h2>
         <pre><code class="language-css">text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);</code></pre>
         <h1 class="muestra" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">HOLA MUNDO!!!!</h1>
-    
-<h3>////////////////</h3>
-<h2 class="normal">Aumenta el tamaño del texto</h2>
-<pre><code class="language-css">font-size: 24px;</code></pre>
-<h1 class="muestra" style="font-size: 24px;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- cambio de tamaño del texto  -->
+    <div class="seccion" data-title="aumentar tamaño texto">
+    <h2 class="normal">Aumenta el tamaño del texto</h2>
+    <pre><code class="language-css">font-size: 24px;</code></pre>
+    <h1 class="muestra" style="font-size: 24px;">HOLA MUNDO!!!!</h1>
+</div>
 
-<h2 class="normal">Especifica la fuente del texto</h2>
-<pre><code class="language-css">font-family: 'Courier New', monospace;</code></pre>
-<h1 class="muestra" style="font-family: 'Courier New', monospace;">HOLA MUNDO!!!!</h1>
+<!-- convertir texto en cursiva -->
+<div class="seccion" data-title="texto cursiva ">
+    <h2 class="normal">Convierte el texto en cursiva</h2>
+    <pre><code class="language-css">font-style: italic;</code></pre>
+    <h1 class="muestra" style="font-style: italic;">HOLA MUNDO!!!!</h1>
+    <br>
+    <h2 class="normal">Define cuánto se inclina un texto en cursiva</h2>
+    <pre><code class="language-css">font-style: oblique 10deg;</code></pre>
+    <h1 class="muestra" style="font-style: oblique 10deg;">HOLA MUNDO!!!!</h1>
+</h1>
+</div>
+<!-- vertical aligin -->
+<div class="seccion" data-title="centrado vertical  alineacion">
+    <h2 class="normal">Sube o baja el texto con respecto a la línea base</h2>
+    <pre><code class="language-css">vertical-align: 5px;</code></pre>
+    <h1 class="muestra" style="vertical-align: 5px;">HOLA MUNDO!!!!</h1>
+</div>
 
-<h2 class="normal">Convierte el texto en cursiva</h2>
-<pre><code class="language-css">font-style: italic;</code></pre>
-<h1 class="muestra" style="font-style: italic;">HOLA MUNDO!!!!</h1>
+<!-- subrayado supersior -->
+<div class="seccion" data-title="subrayado superior linea texto">
+    <h2 class="normal">Agrega una línea encima del texto</h2>
+    <pre><code class="language-css">text-decoration: overline;</code></pre>
+    <h1 class="muestra" style="text-decoration: overline;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- tachado de texto  -->
+<div class="seccion" data-title="tachado texto subrayado ">
+    <h2 class="normal">Tacha el texto</h2>
+    <pre><code class="language-css">text-decoration: line-through;</code></pre>
+    <h1 class="muestra" style="text-decoration: line-through;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- texto a mayusculas  -->
+<div class="seccion" data-title="texto mayusculas upercase transform">
+    <h2 class="normal">Convierte todo el texto en mayúsculas</h2>
+    <pre><code class="language-css">text-transform: uppercase;</code></pre>
+    <h1 class="muestra" style="text-transform: uppercase;">Hola Mundo!!!!</h1>
+</div>
+<!-- texto minusculas -->
 
-<h2 class="normal">Sube o baja el texto con respecto a la línea base</h2>
-<pre><code class="language-css">vertical-align: 5px;</code></pre>
-<h1 class="muestra" style="vertical-align: 5px;">HOLA MUNDO!!!!</h1>
+<div class="seccion" data-title="minusculas texto ">
+    <h2 class="normal">Convierte todo el texto en minúsculas</h2>
+    <pre><code class="language-css">text-transform: lowercase;</code></pre>
+    <h1 class="muestra" style="text-transform: lowercase;">HOLA MUNDO!!!!</h1>
+</div>
 
-<h2 class="normal">Justifica el texto</h2>
-<pre><code class="language-css">text-align: justify;</code></pre>
-<h1 class="muestra" style="text-align: justify; width: 300px;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Agrega una línea encima del texto</h2>
-<pre><code class="language-css">text-decoration: overline;</code></pre>
-<h1 class="muestra" style="text-decoration: overline;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Tacha el texto</h2>
-<pre><code class="language-css">text-decoration: line-through;</code></pre>
-<h1 class="muestra" style="text-decoration: line-through;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Elimina cualquier decoración de texto</h2>
-<pre><code class="language-css">text-decoration: none;</code></pre>
-<h1 class="muestra" style="text-decoration: none;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Convierte todo el texto en mayúsculas</h2>
-<pre><code class="language-css">text-transform: uppercase;</code></pre>
-<h1 class="muestra" style="text-transform: uppercase;">Hola Mundo!!!!</h1>
-
-<h2 class="normal">Convierte todo el texto en minúsculas</h2>
-<pre><code class="language-css">text-transform: lowercase;</code></pre>
-<h1 class="muestra" style="text-transform: lowercase;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Pone la primera letra de cada palabra en mayúscula</h2>
-<pre><code class="language-css">text-transform: capitalize;</code></pre>
-<h1 class="muestra" style="text-transform: capitalize;">hola mundo!!!!</h1>
-
-<h2 class="normal">Controla el espacio entre letras</h2>
-<pre><code class="language-css">letter-spacing: 2px;</code></pre>
-<h1 class="muestra" style="letter-spacing: 2px;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Controla el espacio entre líneas</h2>
-<pre><code class="language-css">line-height: 1.5;</code></pre>
-<h1 class="muestra" style="line-height: 1.5;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Controla si el texto se corta o no cuando se desborda</h2>
-<pre><code class="language-css">overflow: hidden;</code></pre>
-<h1 class="muestra" style="overflow: hidden; width: 150px; white-space: nowrap;">HOLA MUNDO LARGO!!!!</h1>
-
-<h2 class="normal">Muestra "..." cuando el texto es muy largo</h2>
-<pre><code class="language-css">text-overflow: ellipsis;</code></pre>
-<h1 class="muestra" style="width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">HOLA MUNDO MUY LARGO!!!!</h1>
-
-<h2 class="normal">Evita que el texto se divida en varias líneas</h2>
-<pre><code class="language-css">white-space: nowrap;</code></pre>
-<h1 class="muestra" style="white-space: nowrap;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Ajusta el texto para que se divida automáticamente</h2>
-<pre><code class="language-css">word-wrap: break-word;</code></pre>
-<h1 class="muestra" style="word-wrap: break-word; width: 150px;">HOLA MUNDO MUY LARGO!!!!</h1>
-
-<h2 class="normal">Hace que todo el texto use un espacio uniforme</h2>
-<pre><code class="language-css">font-variant: small-caps;</code></pre>
-<h1 class="muestra" style="font-variant: small-caps;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Define cuánto se inclina un texto en cursiva</h2>
-<pre><code class="language-css">font-style: oblique 10deg;</code></pre>
-<h1 class="muestra" style="font-style: oblique 10deg;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Cambia la dirección del texto</h2>
-<pre><code class="language-css">direction: rtl;</code></pre>
-<h1 class="muestra" style="direction: rtl;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Agrega un borde al texto</h2>
-<pre><code class="language-css">-webkit-text-stroke: 1px black;</code></pre>
-<h1 class="muestra" style="-webkit-text-stroke: 1px black; color: white;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Agrega un fondo con degradado al texto</h2>
-<pre><code class="language-css">background: linear-gradient(to right, red, blue);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;</code></pre>
-<h1 class="muestra" style="background: linear-gradient(to right, red, blue);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;">HOLA MUNDO!!!!</h1>
-
-<h2 class="normal">Evita la selección del texto por parte del usuario</h2>
-<pre><code class="language-css">user-select: none;</code></pre>
-<h1 class="muestra" style="user-select: none;">HOLA MUNDO!!!!</h1>
-<h3>///////////////</h3>
+<!-- letras capitales  -->
+<div class="seccion" data-title="letras primera capital ">
+    <h2 class="normal">Pone la primera letra de cada palabra en mayúscula</h2>
+    <pre><code class="language-css">text-transform: capitalize;</code></pre>
+    <h1 class="muestra" style="text-transform: capitalize;">hola mundo!!!!</h1>
+</div>
+<!-- control de espacio entre letras -->
+<div class="seccion" data-title="espacio entre letras">
+    <h2 class="normal">Controla el espacio entre letras</h2>
+    <pre><code class="language-css">letter-spacing: 2px;</code></pre>
+    <h1 class="muestra" style="letter-spacing: 2px;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- espacio entre lineas -->
+<div class="seccion" data-title="espacio entre lineas">
+    <h2 class="normal">Controla el espacio entre líneas</h2>
+    <pre><code class="language-css">line-height: 1.5;</code></pre>
+    <h1 class="muestra" style="line-height: 1.5;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- desbordamiento de texto -->
+<div class="seccion" data-title="control de desbordamiento desborda texto ">
+    <h2 class="normal">Controla si el texto se corta o no cuando se desborda</h2>
+    <pre><code class="language-css">overflow: hidden;</code></pre>
+    <h1 class="muestra" style="overflow: hidden; width: 150px; white-space: nowrap;">HOLA MUNDO LARGO!!!!</h1>
+</div>
+<!-- puntos con texto demasiado largo -->
+<div class="seccion" data-title="desbordamiento texto puntos suspensivos">
+    <h2 class="normal">Muestra "..." cuando el texto es muy largo</h2>
+    <pre><code class="language-css">text-overflow: ellipsis;</code></pre>
+    <h1 class="muestra" style="width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">HOLA MUNDO MUY LARGO!!!!</h1>
+</div>
+<!-- evita que el texto se divida en varias lineas  -->
+<div class="seccion" data-title="evitar division de texto lineas">
+    <h2 class="normal">Evita que el texto se divida en varias líneas</h2>
+    <pre><code class="language-css">white-space: nowrap;</code></pre>
+    <h1 class="muestra" style="white-space: nowrap;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- texto en espacio uniforme  -->
+<div class="seccion" data-title="texto espacio uniforme">
+    <h2 class="normal">Hace que todo el texto use un espacio uniforme</h2>
+    <pre><code class="language-css">font-variant: small-caps;</code></pre>
+    <h1 class="muestra" style="font-variant: small-caps;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- direccion de texto -->
+<div class="seccion" data-title="cambio de direccion de texto">
+    <h2 class="normal">Cambia la dirección del texto</h2>
+    <pre><code class="language-css">direction: rtl;</code></pre>
+    <h1 class="muestra" style="direction: rtl;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- borde al texto  -->
+<div class="seccion" data-title="borde texto">
+    <h2 class="normal">Agrega un borde al texto</h2>
+    <pre><code class="language-css">-webkit-text-stroke: 1px black;</code></pre>
+    <h1 class="muestra" style="-webkit-text-stroke: 1px black; color: white;">HOLA MUNDO!!!!</h1>
+</div>
+<!-- degradado de texto -->
+<div class="seccion" data-title=" fondo degradado texto">
+    <h2 class="normal">Agrega un fondo con degradado al texto</h2>
+    <pre><code class="language-css">background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;</code></pre>
+    <h1 class="muestra" style="background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">HOLA MUNDO!!!!</h1>
+</div>
+<!--Evita la selección del texto por parte del usuario  -->
+<div class="seccion" data-title="Evita la selección del texto por parte del usuario">
+        <h2 class="normal">Evita la selección del texto por parte del usuario</h2>
+    <pre><code class="language-css">user-select: none;</code></pre>
+    <h1 class="muestra" style="user-select: none;">HOLA MUNDO!!!!</h1>
+</div>
 
 
-    
-        <pre><code class="language-css">
-        </code></pre>
-    
-    
-    
-        <pre><code class="language-css">
-        </code></pre>
-    
-    
-    
-        <pre><code class="language-css">
-        </code></pre>
-    
+        
+            <pre><code class="language-css">
+            </code></pre>
+        
+        
+        
+            <pre><code class="language-css">
+            </code></pre>
+        
+        
+        
+            <pre><code class="language-css">
+            </code></pre>
+        
     
     </div>
     

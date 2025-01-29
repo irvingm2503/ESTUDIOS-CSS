@@ -1,0 +1,19 @@
+
+//alert("conexiob");
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search");
+    const sections = document.querySelectorAll(".seccion");
+
+    searchInput.addEventListener("input", function () {
+        const query = searchInput.value.toLowerCase();
+
+        sections.forEach(section => {
+            const title = section.getAttribute("data-title").toLowerCase();
+            if (title.includes(query)) {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        });
+    });
+});
